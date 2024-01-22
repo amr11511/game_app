@@ -1,0 +1,84 @@
+:root
+{
+    --main-color: #272b30;
+    --seconde-color: #32383e;
+    --color-text: #fff;
+    --btn-main-color: #272729;
+}
+.cursorPointer{
+    cursor: pointer;
+}
+body{
+    font-family: "Comfortaa", sans-serif;
+    min-height: 100%;
+    min-width: 100%;
+    background-color: var(--main-color);
+    color: var(--color-text);
+}
+header img{
+    max-height: 30vh;
+    object-fit: cover;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--color-text);
+}
+.nav-link:focus, .nav-link:hover {
+    color: var(--color-text);
+}
+#navOnly{
+    position: relative;
+    top: -7vh;
+    background-color: var(--main-color);
+}
+.mtt{
+    margin-top: 31px;
+}
+.navbar{
+    transition: all 0.5s;
+}
+/***********************************************/
+.item{
+    overflow-wrap:break-word;
+    filter: grayscale(0.7);
+    transition: transform 0.5s, filter 0.5s 0.1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item:hover{
+    transform: scale(1.05);
+    filter: grayscale(0);
+}
+/******************/
+.phas1{
+    background-color: #32383e;
+    padding: 10px;
+    height: fit-content;
+}
+.phas2{
+    background-color: #32383e;
+    padding: 10px;
+    height: fit-content;
+}
+/****************************/
+.exite i{
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.334);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.exite:hover i{
+    color: white;
+}
+#detOfGame{
+    display: none;
+}
+#games{
+    display: block;
+}
+/*************/
+.bgColor{
+    background-color: rgba(0, 191, 255, 0.292);
+    padding: 7px;
+    border-radius: 10px;
+}
